@@ -1,11 +1,12 @@
 <script lang="ts">
 	export let href: string;
 	export let src: string;
+	export let target: string;
 	export let text: string;
 </script>
 
 <li>
-	<a {href}>
+	<a {href} {target}>
 		<span class="logo">
 			<img {src} alt={text} />
 		</span>

@@ -47,7 +47,7 @@
     on:close={handleMenuClose}
 >
     <!--<MenuListItem href='/kola-records' src='/kola_records_icon.webp' text='Kola records' />-->
-    <MenuListItem href='https://github.com/legomolina/kola' src='/github_icon.webp' text='Github' />
+    <MenuListItem href='https://github.com/legomolina/kola' src='/github_icon.webp' text='Github' target='_blank' />
 </MenuList>
 
 <style>
