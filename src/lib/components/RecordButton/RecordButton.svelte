@@ -62,7 +62,7 @@
 
     function startRecording() {
         state = 'recording';
-        recorder = new MediaRecorder(stream, { mimeType: 'video/webm;codecs=vp9' });
+        recorder = new MediaRecorder(stream, { mimeType: 'video/webm' });
         recorder.start();
 
         recorder.addEventListener('dataavailable', (event: BlobEvent) => {
@@ -89,7 +89,7 @@
     }
 
     function downloadRecording(videoChunks: Blob[]) {
-        const blob = new Blob(videoChunks, { type: 'video/webm;codecs=vp9' });
+        const blob = new Blob(videoChunks, { type: 'video/webm' });
         const a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
         a.download = 'screen_record.webm';
