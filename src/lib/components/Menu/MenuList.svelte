@@ -1,22 +1,23 @@
 <script lang="ts">
     import { slide } from 'svelte/transition';
     import { clickOutside } from '$lib/actions/click-outside';
-    import { createEventDispatcher } from 'svelte';
+    import { menuStore } from '$lib/components/Menu/menu-store';
 
     export let excludedEls: HTMLElement[];
     export let listEl!: HTMLElement;
-    export let visible: boolean;
-
-    const dispatcher = createEventDispatcher();
 
     function handleClickOutside() {
-        console.log('closing');
-        dispatcher('close');
+        menuStore.set({ visible: false });
     }
 </script>
 
-{#if visible}
-    <ul transition:slide={{ duration: 300 }} bind:this={listEl} use:clickOutside={{ exclude: excludedEls }} on:clickoutside={handleClickOutside}>
+{#if $menuStore.visible}
+    <ul
+        transition:slide={{ duration: 300 }}
+        bind:this={listEl}
+        use:clickOutside={{ exclude: excludedEls }}
+        on:clickoutside={handleClickOutside}
+    >
         <slot />
     </ul>
 {/if}

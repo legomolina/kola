@@ -1,12 +1,18 @@
 <script lang="ts">
+	import { menuStore } from '$lib/components/Menu/menu-store';
+
 	export let href: string;
 	export let src: string;
-	export let target: string;
+	export let target: string | undefined = undefined;
 	export let text: string;
+
+	function handleLinkClick() {
+	    menuStore.set({ visible: false });
+	}
 </script>
 
 <li>
-	<a {href} {target}>
+	<a {href} {target} on:click={handleLinkClick}>
 		<span class="logo">
 			<img {src} alt={text} />
 		</span>

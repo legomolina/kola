@@ -3,11 +3,11 @@
     import MenuList from '$lib/components/Menu/MenuList.svelte';
     import MenuListItem from '$lib/components/Menu/MenuListItem.svelte';
     import { computePosition, offset } from '@floating-ui/dom';
+	import { menuStore } from '$lib/components/Menu/menu-store';
 
     let navEl!: HTMLElement;
     let listEl!: HTMLElement;
     let menuPosition = { x: '0px', y: '0px' };
-    let menuVisible = false;
 
     $: if (navEl && listEl) {
         computePosition(navEl, listEl, {
@@ -24,11 +24,9 @@
     }
 
     function toggleMenu() {
-        menuVisible = !menuVisible;
-    }
-
-    function handleMenuClose() {
-        menuVisible = false;
+        menuStore.update((state) => ({
+            visible: !state.visible,
+        }));
     }
 </script>
 
@@ -43,10 +41,8 @@
     --top={menuPosition.y}
     --left={menuPosition.x}
     excludedEls={[navEl]}
-    visible={menuVisible}
-    on:close={handleMenuClose}
 >
-    <!--<MenuListItem href='/kola-records' src='/kola_records_icon.webp' text='Kola records' />-->
+    <MenuListItem href='/records' src='/kola_records_icon.webp' text='Kola records' />
     <MenuListItem href='https://github.com/legomolina/kola' src='/github_icon.webp' text='Github' target='_blank' />
 </MenuList>
 

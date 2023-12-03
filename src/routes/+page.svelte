@@ -1,5 +1,11 @@
 <script lang="ts">
 	import Menu from '$lib/components/Menu/Menu.svelte';
+	import { globalStore } from '$lib/store/global';
+
+	globalStore.set({
+	    animatedBackgroundColor: 'var(--accent-color)',
+	    staticBackgroundColor: 'var(--accent-color)',
+	});
 </script>
 
 <svelte:head>
@@ -26,8 +32,6 @@
 	main {
 		width: 100%;
 		height: 100%;
-
-		background-color: var(--accent-color);
 	}
 
 	nav {
@@ -51,6 +55,8 @@
 
 	.image-container img {
 		max-width: 100%;
+
+        view-transition-name: kola-logo;
 	}
 
     footer {
