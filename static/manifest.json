@@ -1,0 +1,17 @@
+{
+    "short_name": "Kola records",
+    "name": "Kola records",
+    "start_url": "/records",
+    "icons": [
+        {
+            "src": "kola_records_icon.webp",
+            "type": "image/webp",
+            "sizes": "512x512"
+        }
+    ],
+    "background_color": "#242424",
+    "theme_color": "#E62F2F",
+    "display": "standalone",
+    "scope": "/records",
+    "description": "The easy way to record your screen"
+}

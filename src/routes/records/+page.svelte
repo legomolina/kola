@@ -36,23 +36,25 @@
 
 <svelte:head>
     <title>Kola records</title>
+    <link rel="manifest" href="/manifest.json" />
 </svelte:head>
 
 <div class="anchor" bind:this={anchor}></div>
-<!--
+
 {#if isChrome && !($recordsStore?.discardedApp ?? true)}
-    <PointerArrow
-        arrowRotation="-90deg"
-        {offsetPosition}
-        placement="bottom-start"
-        referenceEl={anchor}
-        textPosition="bottom"
-        on:click={dismissDownloadApp}
-    >
-        Install App
-    </PointerArrow>
+    <div class="pwa-app-install">
+        <PointerArrow
+            arrowRotation="-90deg"
+            {offsetPosition}
+            placement="bottom-start"
+            referenceEl={anchor}
+            textPosition="bottom"
+            on:click={dismissDownloadApp}
+        >
+            Install App
+        </PointerArrow>
+    </div>
 {/if}
--->
 
 <nav class="kola-logo">
     <a href="/">
@@ -89,6 +91,17 @@
         max-width: 100%;
 
         view-transition-name: kola-logo;
+    }
+
+    /* Remove kola logo and install arrow once app is installed */
+    @media(display-mode: standalone) {
+        .pwa-app-install {
+            display: none;
+        }
+
+        .kola-logo {
+            display: none;
+        }
     }
 
     main {
