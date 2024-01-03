@@ -1,0 +1,151 @@
+{
+    "cards": {
+        "collections": [
+            {
+                "name": "Base 01",
+                "url": "Base 01",
+                "releaseDate": "2023-12-26T16:16:16.675Z",
+                "cards": [
+                    {
+                        "name": "Base 01 - 01",
+                        "url": "B01-01.png"
+                    },
+                    {
+                        "name": "Base 01 - 02",
+                        "url": "B01-02.png"
+                    },
+                    {
+                        "name": "Base 01 - 03",
+                        "url": "B01-03.png"
+                    },
+                    {
+                        "name": "Base 01 - 04",
+                        "url": "B01-04.png"
+                    },
+                    {
+                        "name": "Base 01 - 05",
+                        "url": "B01-05.png"
+                    },
+                    {
+                        "name": "Base 01 - 06",
+                        "url": "B01-06.png"
+                    }
+                ]
+            },
+            {
+                "name": "Base 02",
+                "url": "Base 02",
+                "releaseDate": "2023-12-26T16:16:16.675Z",
+                "cards": [
+                    {
+                        "name": "Base 02 - 01",
+                        "url": "B02-01.png"
+                    },
+                    {
+                        "name": "Base 02 - 02",
+                        "url": "B02-02.png"
+                    },
+                    {
+                        "name": "Base 02 - 03",
+                        "url": "B02-03.png"
+                    },
+                    {
+                        "name": "Base 02 - 04",
+                        "url": "B02-04.png"
+                    },
+                    {
+                        "name": "Base 02 - 05",
+                        "url": "B02-05.png"
+                    },
+                    {
+                        "name": "Base 02 - 06",
+                        "url": "B02-06.png"
+                    }
+                ]
+            },
+            {
+                "name": "Base 03",
+                "url": "Base 03",
+                "cards": [
+                    {"name": "Base 03 - 01", "url": "B03-01.png"},
+                    {"name": "Base 03 - 02", "url": "B03-02.png"},
+                    {"name": "Base 03 - 03", "url": "B03-03.png"},
+                    {"name": "Base 03 - 04", "url": "B03-04.png"},
+                    {"name": "Base 03 - 05", "url": "B03-05.png"},
+                    {"name": "Base 03 - 06", "url": "B03-06.png"},
+                    {"name": "Base 03 - 07", "url": "B03-07.png"},
+                    {"name": "Base 03 - 08", "url": "B03-08.png"},
+                    {"name": "Base 03 - 09", "url": "B03-09.png"},
+                    {"name": "Base 03 - 10", "url": "B03-10.png"},
+                    {"name": "Base 03 - 11", "url": "B03-11.png"},
+                    {"name": "Base 03 - 12", "url": "B03-12.png"},
+                    {"name": "Base 03 - 13", "url": "B03-13.png"},
+                    {"name": "Base 03 - 14", "url": "B03-14.png"},
+                    {"name": "Base 03 - 15", "url": "B03-15.png"},
+                    {"name": "Base 03 - 16", "url": "B03-16.png"},
+                    {"name": "Base 03 - 17", "url": "B03-17.png"},
+                    {"name": "Base 03 - 18", "url": "B03-18.png"},
+                    {"name": "Base 03 - 19", "url": "B03-19.png"},
+                    {"name": "Base 03 - 20", "url": "B03-20.png"},
+                    {"name": "Base 03 - 21", "url": "B03-21.png"},
+                    {"name": "Base 03 - 22", "url": "B03-22.png"},
+                    {"name": "Base 03 - 23", "url": "B03-23.png"},
+                    {"name": "Base 03 - 24", "url": "B03-24.png"},
+                    {"name": "Base 03 - 25", "url": "B03-25.png"},
+                    {"name": "Base 03 - 26", "url": "B03-26.png"},
+                    {"name": "Base 03 - 27", "url": "B03-27.png"},
+                    {"name": "Base 03 - 28", "url": "B03-28.png"},
+                    {"name": "Base 03 - 29", "url": "B03-29.png"},
+                    {"name": "Base 03 - 30", "url": "B03-30.png"},
+                    {"name": "Base 03 - 31", "url": "B03-31.png"},
+                    {"name": "Base 03 - 32", "url": "B03-32.png"},
+                    {"name": "Base 03 - 33", "url": "B03-33.png"},
+                    {"name": "Base 03 - 34", "url": "B03-34.png"},
+                    {"name": "Base 03 - 35", "url": "B03-35.png"},
+                    {"name": "Base 03 - 36", "url": "B03-36.png"},
+                    {"name": "Base 03 - 37", "url": "B03-37.png"},
+                    {"name": "Base 03 - 38", "url": "B03-38.png"},
+                    {"name": "Base 03 - 39", "url": "B03-39.png"},
+                    {"name": "Base 03 - 40", "url": "B03-40.png"},
+                    {"name": "Base 03 - 41", "url": "B03-41.png"},
+                    {"name": "Base 03 - 42", "url": "B03-42.png"},
+                    {"name": "Base 03 - 43", "url": "B03-43.png"},
+                    {"name": "Base 03 - 44", "url": "B03-44.png"},
+                    {"name": "Base 03 - 45", "url": "B03-45.png"},
+                    {"name": "Base 03 - 46", "url": "B03-46.png"},
+                    {"name": "Base 03 - 47", "url": "B03-47.png"},
+                    {"name": "Base 03 - 48", "url": "B03-48.png"},
+                    {"name": "Base 03 - 49", "url": "B03-49.png"},
+                    {"name": "Base 03 - 50", "url": "B03-50.png"},
+                    {"name": "Base 03 - 51", "url": "B03-51.png"},
+                    {"name": "Base 03 - 52", "url": "B03-52.png"},
+                    {"name": "Base 03 - 53", "url": "B03-53.png"},
+                    {"name": "Base 03 - 54", "url": "B03-54.png"},
+                    {"name": "Base 03 - 55", "url": "B03-55.png"},
+                    {"name": "Base 03 - 56", "url": "B03-56.png"},
+                    {"name": "Base 03 - 57", "url": "B03-57.png"},
+                    {"name": "Base 03 - 58", "url": "B03-58.png"},
+                    {"name": "Base 03 - 59", "url": "B03-59.png"},
+                    {"name": "Base 03 - 60", "url": "B03-60.png"},
+                    {"name": "Base 03 - 61", "url": "B03-61.png"},
+                    {"name": "Base 03 - 62", "url": "B03-62.png"},
+                    {"name": "Base 03 - 63", "url": "B03-63.png"},
+                    {"name": "Base 03 - 64", "url": "B03-64.png"},
+                    {"name": "Base 03 - 65", "url": "B03-65.png"},
+                    {"name": "Base 03 - 66", "url": "B03-66.png"},
+                    {"name": "Base 03 - 67", "url": "B03-67.png"},
+                    {"name": "Base 03 - 68", "url": "B03-68.png"},
+                    {"name": "Base 03 - 69", "url": "B03-69.png"},
+                    {"name": "Base 03 - 70", "url": "B03-70.png"},
+                    {"name": "Base 03 - 71", "url": "B03-71.png"},
+                    {"name": "Base 03 - 72", "url": "B03-72.png"},
+                    {"name": "Base 03 - 73", "url": "B03-73.png"},
+                    {"name": "Base 03 - 74", "url": "B03-74.png"},
+                    {"name": "Base 03 - 75", "url": "B03-75.png"},
+                    {"name": "Base 03 - 76", "url": "B03-76.png"},
+                    {"name": "Base 03 - 77", "url": "B03-77.png"}
+                ]
+            }
+        ]
+    }
+}

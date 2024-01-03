@@ -15,6 +15,7 @@
 		"@sveltejs/adapter-netlify": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@types/node": "^20.10.5",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
 		"eslint": "^8.28.0",
@@ -30,6 +31,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@floating-ui/dom": "^1.5.3"
+		"@aws-sdk/client-s3": "^3.477.0",
+		"@floating-ui/dom": "^1.5.3",
+		"sharp": "^0.33.1"
 	}
 }

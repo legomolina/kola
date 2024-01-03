@@ -1,10 +1,13 @@
-:root {
+:root, ::backdrop {
     --primary-color: rgb(36 36 36);
     --primary-color-rgb: 36 36 36;
     --accent-color: rgb(230 47 47);
     --font-color: rgb(255 255 255);
     --primary-font: Inter, sans-serif;
     --kola-font: KaushanScript, sans-serif;
+
+    --mhhc-primary-color: rgb(16 14 23);
+    --mhhc-accent-color: rgb(92 213 217);
 
     --animated-background-color: var(--accent-color);
     --static-background-color: var(--accent-color);
