@@ -2,4 +2,4 @@
   command = "npm run build"
   publish = "build"
 [functions]
-  external_node_modules = ["sharp"]
+  included_files = ["sharp"]
