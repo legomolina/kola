@@ -7,7 +7,7 @@ export const buildCollection = (collection: CollectionResponseModel): Collection
 
     return {
         cards,
-        coverCards: cards.splice(0, 3),
+        coverCards: [...cards].splice(0, 3),
         name: collection.name,
         releaseDate,
         url: collection.url,
