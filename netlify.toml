@@ -2,4 +2,5 @@
   command = "npm run build"
   publish = "build"
 [functions]
-  included_files = ["sharp"]
+  node_bundler: ["esbuild"]
+  external_node_modules = ["sharp"]
