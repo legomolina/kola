@@ -103,6 +103,10 @@
         overflow: auto;
     }
 
+    .cards-grid > div {
+        cursor: pointer;
+    }
+
     figure {
         margin: 0;
     }

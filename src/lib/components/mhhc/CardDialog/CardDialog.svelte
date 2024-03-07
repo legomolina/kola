@@ -140,7 +140,7 @@
         margin: 0 auto;
         border-radius: 10px;
 
-
+        overflow: hidden;
         background-color: white;
     }
 
@@ -177,6 +177,7 @@
 
     .close-button img {
         width: 64px;
+        height: 64px;
         padding: 20px;
         filter: brightness(100%) invert(1);
     }
