@@ -43,6 +43,7 @@
     excludedEls={[navEl]}
 >
     <MenuListItem href='/records' src='/kola_records_icon.webp' text='Kola records' />
+    <MenuListItem href='/mhhc-archive' src='/mhhc_icon.webp' text='MHHC archive' --icon-radius="0" />
     <MenuListItem href='https://github.com/legomolina/kola' src='/github_icon.webp' text='Github' target='_blank' />
 </MenuList>
 

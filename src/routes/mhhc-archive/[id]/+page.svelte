@@ -97,6 +97,7 @@
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         justify-items: center;
         gap: 20px;
+        padding: 40px;
 
         flex: 1;
 

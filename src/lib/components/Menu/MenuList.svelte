@@ -37,15 +37,6 @@
 		box-shadow: 0 4px 6px 4px rgb(36 36 36 / 0.3);
 
 		list-style: none;
-	}
-
-	:global(li:first-child) {
-		border-top-right-radius: 8px;
-		border-top-left-radius: 8px;
-	}
-
-	:global(li:last-child) {
-		border-bottom-right-radius: 8px;
-		border-bottom-left-radius: 8px;
+        overflow: hidden;
 	}
 </style>

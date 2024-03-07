@@ -46,7 +46,7 @@
 
 	span img {
 		width: 24px;
-		border-radius: 50%;
+		border-radius: var(--icon-radius, 50%);
 		vertical-align: middle;
 	}
 </style>
