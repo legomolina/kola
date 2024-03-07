@@ -2,6 +2,7 @@ export type CardModel = {
 	bucketBasePath: string;
 	githubUrl: string;
 	name: string;
+    largeUrl: string;
 	mediumUrl: string;
 	smallUrl: string;
 };

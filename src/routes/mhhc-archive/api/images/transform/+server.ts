@@ -21,9 +21,12 @@ export const POST: RequestHandler = async ({ request }) => {
 	const imageMedium = resizeImage(data, 320).then((buffer) =>
         uploadObject(buffer, `${imageWithoutExtension}_320.webp`),
     );
+    const imageLarge = resizeImage(data, 480).then((buffer) => {
+        uploadObject(buffer, `${imageWithoutExtension}_480.webp`);
+    });
 
     try {
-        await Promise.all([imageSmall, imageMedium]);
+        await Promise.all([imageSmall, imageMedium, imageLarge]);
     } catch (e) {
         console.error(e);
         return error(500, 'Error while creating and uploading files');

@@ -3,9 +3,10 @@ import type { CollectionResponseModel } from '@domain/mhhc-archive/models/collec
 import { error } from '@sveltejs/kit';
 import { buildCollection } from '@application/factories/mhhc-archive/collection.factory';
 import { fetchCard } from '@application/images/mhhc-archive/fetch-cards.service';
+import { PUBLIC_ARCHIVE_INFO_FILE } from '$env/static/public';
 
 export const load: PageServerLoad = async ({ fetch, params }) => {
-    const json: { cards: { collections: CollectionResponseModel[] } } = await fetch('/archive-map.json').then(res => res.json());
+    const json: { cards: { collections: CollectionResponseModel[] } } = await fetch(PUBLIC_ARCHIVE_INFO_FILE).then(res => res.json());
     const selectedCollection = json.cards.collections.find((collection) => {
         return collection.name === params.id;
     });

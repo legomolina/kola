@@ -10,6 +10,7 @@ export const buildCard = (card: CardResponseModel, collectionUrl: string): CardM
         bucketBasePath,
         githubUrl: `https://github.com/GrenderG/MHHC_Archive/blob/master/Card%20Scans/${encodeURIComponent(collectionUrl)}/${encodeURIComponent(card.url)}?raw=true`,
         name: card.name,
+        largeUrl: `${bucketBaseUrl}_480.webp`,
         mediumUrl: `${bucketBaseUrl}_320.webp`,
         smallUrl: `${bucketBaseUrl}_180.webp`,
     };

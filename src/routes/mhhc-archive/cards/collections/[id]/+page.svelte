@@ -1,12 +1,21 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import chevronLeft from '@assets/icons/chevron-left.png';
+    import CardDialog from '$lib/components/mhhc/CardDialog/CardDialog.svelte';
 
     function goBack() {
         window.history.back();
     }
 
     export let data: PageData;
+
+    let isDialogOpen = false;
+    let selectedIndex = 0;
+
+    function openLarge(index: number) {
+        isDialogOpen = true;
+        selectedIndex = index;
+    }
 </script>
 
 <svelte:head>
@@ -22,16 +31,18 @@
     </header>
 
     <div class="cards-grid">
-        {#each data.cards as card}
-            <a href={card.githubUrl} target="_blank" title="See original">
+        {#each data.cards as card, index}
+            <div role="button" tabindex="0" on:click={() => openLarge(index)} on:keydown>
                 <figure>
                     <img alt={card.name} loading="lazy" src={card.smallUrl}>
                     <figcaption>{card.name}</figcaption>
                 </figure>
-            </a>
+            </div>
         {/each}
     </div>
 </div>
+
+<CardDialog cards={data.cards} {selectedIndex} bind:isOpen={isDialogOpen}></CardDialog>
 
 <style>
     .container {
