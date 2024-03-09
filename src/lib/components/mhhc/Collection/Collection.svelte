@@ -13,7 +13,7 @@
             {/if}
         </div>
 
-        <a href={`./mhhc-archive/${collection.name}`}>See all</a>
+        <a href={`./mhhc-archive/${collection.name}`}>View all</a>
     </header>
 
     <div class="cards-container">

@@ -28,9 +28,9 @@
         <div>This is a non-profit open-source preservation project. All rights belong to Capcom.</div>
 
         <div class="right-side">
-            <span>See my other projects at <a href="https://kola.es" target="_blank" title="Kola">kola.es</a>.</span>
+            <span>Site by <a href="https://x.com/legomolina" target="_blank">@legomolina</a>, check other projects at <a href="https://kola.es" target="_blank">kola.es</a>.</span>
             <br>
-            <span>Scans done by cards owner <a href="https://github.com/GrenderG" target="_blank" title="Grender github">GrenderG</a>.</span>
+            <span>Scans done by <a href="https://x.com/GrenderG" target="_blank">@GrenderG</a> and <a href="https://x.com/taiko_no_ossan" target="_blank">@taiko_no_ossan</a>.</span>
         </div>
     </footer>
 </div>
@@ -88,6 +88,7 @@
     footer {
         display: flex;
         justify-content: space-between;
+        align-items: flex-end;
 
         margin-top: 80px;
         padding: 20px;
@@ -99,6 +100,7 @@
 
     footer .right-side {
         text-align: right;
+        line-height: 1.5;
     }
 
     footer a {
