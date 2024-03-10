@@ -1,21 +1,29 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import Collection from '$lib/components/mhhc/Collection/Collection.svelte';
+    import boardGameIcon from '@assets/icons/board-game.png';
+    import manualIcon from '@assets/icons/manual.png';
 
     export let data: PageData;
 </script>
-
-<svelte:head>
-    <title>MHHC Archive - Collections</title>
-</svelte:head>
 
 <div class="container">
     <header>
         <h1>Monster Hunter Hunting Card Collection</h1>
 
-        <a class="mhhc-github-link" href="https://github.com/GrenderG/MHHC_Archive" target="_blank" title="MHHC github repo">
-            <img src="/github_icon.webp" alt="Github repo">
-        </a>
+        <div class="header-icons">
+            <a class="mhhc-github-link board-icon" href="https://github.com/GrenderG/MHHC_Archive/tree/master/Other/Playsheets" target="_blank" title="Playsheets">
+                <img src={boardGameIcon} alt="Playsheets">
+            </a>
+
+            <a class="mhhc-github-link manual-icon" href="https://github.com/GrenderG/MHHC_Archive/tree/master/Other/2009%20Manual" target="_blank" title="Manual">
+                <img src={manualIcon} alt="Manual">
+            </a>
+
+            <a class="mhhc-github-link" href="https://github.com/GrenderG/MHHC_Archive" target="_blank" title="MHHC github repo">
+                <img src="/github_icon.webp" alt="Github repo">
+            </a>
+        </div>
     </header>
 
     <div class="collections">
@@ -45,7 +53,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 120px;
+        flex-flow: row wrap;
+        min-height: 120px;
         padding-inline: 80px;
     }
 
@@ -57,12 +66,18 @@
         color: var(--font-color);
     }
 
+    .header-icons {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
     .mhhc-github-link {
+        display: block;
         width: 36px;
         border-radius: 50%;
         opacity: .75;
-        vertical-align: middle;
-        transition: opacity .25s ease-in-out;
+        transition: all .25s ease-in-out;
     }
 
     .mhhc-github-link:hover {
@@ -72,6 +87,24 @@
     .mhhc-github-link > img {
         max-width: 100%;
         filter: brightness(100%) invert(1);
+    }
+
+    .board-icon, .manual-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, .3);
+    }
+
+    .board-icon:hover, .manual-icon:hover {
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    .board-icon > img, .manual-icon > img {
+        max-width: 60%;
     }
 
     .collections {

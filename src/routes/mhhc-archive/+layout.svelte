@@ -9,6 +9,7 @@
 
 <svelte:head>
     <link rel="icon" type="image/webp" href="/mhhc_icon.webp" />
+    <title>MHHC Archive</title>
 </svelte:head>
 
 <slot/>
