@@ -68,11 +68,16 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
         error(500, (e as Error).message);
     }
 
+    console.log('Received github payload, starting card transforming');
+
     const files = getFilesFromCommits(commits);
 
     for (const file of files) {
         const card = buildCardFromFile(file);
-        await fetchCard(card, fetch, true).then(() => console.log(`File ${card.name} uploaded after push!`));
+        console.log(`Processing file ${card.name}...`)
+        fetchCard(card, fetch, true).then(
+            () => console.log(`File ${card.name} uploaded after push!`)
+        );
     }
 
     return new Response();
