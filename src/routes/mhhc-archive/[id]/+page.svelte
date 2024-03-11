@@ -27,7 +27,7 @@
         <button on:click={goBack}>
             <img src={chevronLeft} alt="Back">
         </button>
-        <h1>Collection id {data.collection}</h1>
+        <h1>{data.collection}</h1>
     </header>
 
     <div class="cards-grid">
