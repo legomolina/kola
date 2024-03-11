@@ -17,6 +17,8 @@ export const GET: RequestHandler = async ({ url }) => {
     const json: { cards: { collections: CollectionResponseModel[] } } = await fetch(PUBLIC_ARCHIVE_INFO_FILE).then(res => res.json());
     const collection = json.cards.collections.map((collection) => buildCollection(collection)).find((collection) => collection.name === decodeURIComponent(collectionName));
 
+    console.log(`Updating collection ${collectionName}`);
+
     const getCards = async (collection: CollectionModel) => {
         for (const coverCard of collection.cards) {
             try {

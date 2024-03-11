@@ -1,6 +1,7 @@
 import { checkObject } from '@application/s3/check-object';
 import { NoSuchKey, NotFound } from '@aws-sdk/client-s3';
 import { type CardModel } from '@domain/mhhc-archive/models/card.model';
+import { PUBLIC_API_URL } from '$env/static/public';
 
 export const getRawFile = async (card: CardModel): Promise<Blob | null> => {
     const response = await fetch(card.githubUrl);
@@ -24,10 +25,10 @@ export const transformImage = async (card: CardModel, fetchFn: (typeof fetch))=>
     formData.set('image', rawImage);
     formData.set('name', card.bucketBasePath);
 
-    await fetchFn('/mhhc-archive/api/images/transform', {
+    await fetchFn(`${PUBLIC_API_URL}/mhhc-archive/api/images/transform`, {
         method: 'POST',
         body: formData,
-    });
+    }).then(res => res.blob());
 }
 
 export const fetchCard = async (card: CardModel, fetchFn: (typeof fetch), force = false) => {
