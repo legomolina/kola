@@ -15,14 +15,22 @@ export const POST: RequestHandler = async ({ request }) => {
     const imageWithoutExtension = imageName.replace(/\.[^/.]+$/, "");
 	const data = await image.arrayBuffer();
 
+    console.log(`Recived image to transform ${imageWithoutExtension}`);
+
     const imageSmall = resizeImage(data, 180).then((buffer) =>
-		uploadObject(buffer, `${imageWithoutExtension}_180.webp`),
+		uploadObject(buffer, `${imageWithoutExtension}_180.webp`).then(() => {
+            console.log(`Transformed and uploaded picture '${imageWithoutExtension}_180.webp'`);
+        }),
 	);
 	const imageMedium = resizeImage(data, 320).then((buffer) =>
-        uploadObject(buffer, `${imageWithoutExtension}_320.webp`),
+        uploadObject(buffer, `${imageWithoutExtension}_320.webp`).then(() => {
+            console.log(`Transformed and uploaded picture '${imageWithoutExtension}_320.webp'`);
+        }),
     );
     const imageLarge = resizeImage(data, 480).then((buffer) => {
-        uploadObject(buffer, `${imageWithoutExtension}_480.webp`);
+        uploadObject(buffer, `${imageWithoutExtension}_480.webp`).then(() => {
+            console.log(`Transformed and uploaded picture '${imageWithoutExtension}_480.webp'`);
+        });
     });
 
     try {
