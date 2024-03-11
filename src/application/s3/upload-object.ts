@@ -7,5 +7,7 @@ export const uploadObject = (data: Buffer, key: string) => {
         Key: key,
         Body: data,
         ACL: 'public-read',
+        CacheControl: "no-cache",
+        Expires: new Date(),
     });
 };
