@@ -51,7 +51,7 @@ export const POST: RequestHandler = async ({ fetch, request }) => {
 
         return {
             bucketBasePath,
-            githubUrl: `https://github.com/GrenderG/MHHC_Archive/blob/test/Card%20Scans/${encodeURIComponent(collectionName)}/${encodeURIComponent(cardName)}?raw=true`,
+            githubUrl: `https://github.com/GrenderG/MHHC_Archive/blob/master/Card%20Scans/${encodeURIComponent(collectionName)}/${encodeURIComponent(cardName)}?raw=true`,
             name: urlWithoutExtension,
             largeUrl: `${bucketBaseUrl}_480.webp`,
             mediumUrl: `${bucketBaseUrl}_320.webp`,
