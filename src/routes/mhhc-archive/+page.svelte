@@ -38,7 +38,7 @@
         <div class="right-side">
             <span>Site by <a href="https://x.com/legomolina" target="_blank">@legomolina</a>, check other projects at <a href="https://kola.es" target="_blank">kola.es</a>.</span>
             <br>
-            <span>Scans done by <a href="https://x.com/GrenderG" target="_blank">@GrenderG</a> and <a href="https://x.com/taiko_no_ossan" target="_blank">@taiko_no_ossan</a>.</span>
+            <span>Scans done by <a href="https://x.com/GrenderG" target="_blank">@GrenderG</a>, <a href="https://x.com/taiko_no_ossan" target="_blank">@taiko_no_ossan</a> and <a href="https://x.com/blankakong" target="_blank">@blankakong</a>.</span>
         </div>
     </footer>
 </div>
