@@ -9,7 +9,7 @@
         <div>
             <h1>{collection.name}</h1>
             {#if collection.releaseDate}
-                <h5>Released on {collection.releaseDate.toLocaleDateString('en-US')}</h5>
+                <h5>Released on {collection.releaseDate.toLocaleDateString('en-US', { month: 'long', day: '2-digit', year: 'numeric' })}</h5>
             {/if}
         </div>
 
